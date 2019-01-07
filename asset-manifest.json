@@ -1,15 +1,15 @@
 {
-  "main.css": "/static/css/main.2385cda6.chunk.css",
-  "main.js": "/static/js/main.921b70b3.chunk.js",
-  "main.js.map": "/static/js/main.921b70b3.chunk.js.map",
-  "static/js/1.f61c2225.chunk.js": "/static/js/1.f61c2225.chunk.js",
-  "static/js/1.f61c2225.chunk.js.map": "/static/js/1.f61c2225.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/todo-list-btns.scss": "/static/media/star.ae48a464.svg",
-  "static/media/fonts.scss": "/static/media/ProximaNova-Regular.2d2ae255.woff",
-  "static/css/main.2385cda6.chunk.css.map": "/static/css/main.2385cda6.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.09d55d118334354fcad006bcd685eadf.js": "/precache-manifest.09d55d118334354fcad006bcd685eadf.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/todo/static/css/main.8b3f8cc6.chunk.css",
+  "main.js": "/todo/static/js/main.91b672c5.chunk.js",
+  "main.js.map": "/todo/static/js/main.91b672c5.chunk.js.map",
+  "static/js/1.f61c2225.chunk.js": "/todo/static/js/1.f61c2225.chunk.js",
+  "static/js/1.f61c2225.chunk.js.map": "/todo/static/js/1.f61c2225.chunk.js.map",
+  "runtime~main.js": "/todo/static/js/runtime~main.8a695b30.js",
+  "runtime~main.js.map": "/todo/static/js/runtime~main.8a695b30.js.map",
+  "static/media/todo-list-btns.scss": "/todo/static/media/trash.47c997dd.svg",
+  "static/media/fonts.scss": "/todo/static/media/ProximaNova-Regular.2d2ae255.woff",
+  "static/css/main.8b3f8cc6.chunk.css.map": "/todo/static/css/main.8b3f8cc6.chunk.css.map",
+  "index.html": "/todo/index.html",
+  "precache-manifest.7c992313d7fa10e8b6621b36d54f6ba2.js": "/todo/precache-manifest.7c992313d7fa10e8b6621b36d54f6ba2.js",
+  "service-worker.js": "/todo/service-worker.js"
 }
