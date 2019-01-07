@@ -1,12 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import './base/fonts.scss';
+import './base/base.scss';
+import './components/app-header/app-header.scss'
+import './components/search-panel/search.scss';
+import './components/search-panel/search-panel.scss';
+import './components/todo-list/todo-list.scss';
+import './components/todo-list-item/todo-list-item.scss';
+import './components/todo-list-btns/todo-list-btns.scss';
+import './components/search-filter/search-filter.scss';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import AppHeader from './components/app-header/app-header';
+import SearchPanel from './components/search-panel/search-panel';
+import TodoList from './components/todo-list/todo-list';
+import SearchFilter from './components/search-filter/search-filter';
+
+const App = () => {
+  return (
+    <div className="container">
+      <AppHeader />
+      <div className="search">
+        <SearchPanel />
+        <SearchFilter />
+      </div>
+      <TodoList />
+    </div>
+  );
+};
+
+ReactDOM.render(<App />, document.querySelector('#root'));
