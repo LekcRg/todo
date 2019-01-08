@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/todo/static/media/ProximaNova-Light.0188899c.ttf"
   },
   {
-    "revision": "91b672c5c38a46a57d82",
-    "url": "/todo/static/css/main.8b3f8cc6.chunk.css"
+    "revision": "3c752bba3334e3cef3c6",
+    "url": "/todo/static/css/main.0b84f79b.chunk.css"
   },
   {
-    "revision": "f61c222533e03e4114e1",
-    "url": "/todo/static/js/1.f61c2225.chunk.js"
+    "revision": "91f2bfc69226411c1968",
+    "url": "/todo/static/js/1.91f2bfc6.chunk.js"
   },
   {
     "revision": "8a695b30138abc35248a",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/todo/static/media/ProximaNova-Light.eb74a591.woff"
   },
   {
-    "revision": "91b672c5c38a46a57d82",
-    "url": "/todo/static/js/main.91b672c5.chunk.js"
+    "revision": "3c752bba3334e3cef3c6",
+    "url": "/todo/static/js/main.3c752bba.chunk.js"
   },
   {
     "revision": "10141a9d737da9c84e6e14ec5a562c6c",
@@ -52,23 +52,23 @@ self.__precacheManifest = [
     "url": "/todo/static/media/ProximaNova-Bold.926a08fb.ttf"
   },
   {
-    "revision": "18992fbc284bf8aa57a853d8a11736fd",
-    "url": "/todo/static/media/trash-red.18992fbc.svg"
+    "revision": "d685cca47cd028f30197a7e122d45f04",
+    "url": "/todo/static/media/star-red.d685cca4.svg"
   },
   {
-    "revision": "ae48a4645b83df967f119b4473e89105",
-    "url": "/todo/static/media/star.ae48a464.svg"
+    "revision": "18992fbc284bf8aa57a853d8a11736fd",
+    "url": "/todo/static/media/trash-red.18992fbc.svg"
   },
   {
     "revision": "47c997ddce4665cd9719cc172883a66e",
     "url": "/todo/static/media/trash.47c997dd.svg"
   },
   {
-    "revision": "d685cca47cd028f30197a7e122d45f04",
-    "url": "/todo/static/media/star-red.d685cca4.svg"
+    "revision": "ae48a4645b83df967f119b4473e89105",
+    "url": "/todo/static/media/star.ae48a464.svg"
   },
   {
-    "revision": "3195346336cce080007eb434016082db",
+    "revision": "600983cd5eba4e9b3ef53f6065cfd9b5",
     "url": "/todo/index.html"
   }
 ];
