@@ -1,8 +1,6 @@
 @import '../../base/variables';
 
 .todo-item {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   padding: 8px 15px;
   list-style: none;
@@ -16,10 +14,43 @@
   }
 
   &__text {
+    position: relative;
+    cursor: pointer;
+    transition: color .2s ease;
 
-    &.important {
-      font-family: $PNB;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 0;
+      height: 1px;
+      background: #000;
+      transition: width .2s ease;
+    }
+
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &-container.--important & {
       color: tomato;
+
+      &:before {
+        background: tomato;
+      }
+    }
+
+    &-container.--important .todo-list-btn.--important {
+      background-image: url(../../icns/star-red.svg);
+    }
+
+    &-container.--done &:before {
+      width: 100%;
     }
   }
 }
