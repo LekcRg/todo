@@ -15,36 +15,76 @@ import SearchPanel from '../search-panel/search-panel';
 import TodoList from '../todo-list/todo-list';
 import SearchFilter from '../search-filter/search-filter';
 
-const affairs = [
-  {
-    label: 'First element',
-    important: false,
-    id: 1,
-  },
-  {
-    label: 'Second element',
-    important: true,
-    id: 2,
-  },
-  {
-    label: 'Third element',
-    important: false,
-    id: 3,
-  },
-]
+export default class App extends React.Component {
+  constructor() {
+    super();
 
-const App = () => {
-  return (
-    <div className="container">
-      <AppHeader />
-      <div className="search">
-        <SearchPanel />
-        <SearchFilter />
+    this.state = {
+      affairs: [
+        {
+          label: 'First element',
+          important: false,
+          id: 1,
+        },
+        {
+          label: 'Second element',
+          important: true,
+          id: 2,
+        },
+        {
+          label: 'Third element',
+          important: false,
+          id: 3,
+        },
+      ],
+    };
+
+    this.deleteItem = ({ id }) => {
+      const el = this.state.affairs.find((el) => el.id === id),
+        currentId = this.state.affairs.indexOf(el),
+        newAffair = [
+          ...this.state.affairs.slice(0, currentId),
+          ...this.state.affairs.slice(currentId + 1),
+        ];
+
+      this.setState(() => {
+        return {
+          affairs: newAffair,
+        }
+      });
+    };
+  }
+
+  render() {
+    return (
+      <div className="container">
+        <AppHeader />
+        <div className="search">
+          <SearchPanel />
+          <SearchFilter />
+        </div>
+        <TodoList
+          affairs={this.state.affairs}
+          deleteItem={this.deleteItem} />
       </div>
-      <TodoList
-        affairs={affairs} />
-    </div>
-  );
-};
+    );
+  };
 
-export default App;
+}
+
+// const App = () => {
+  // return (
+  //   <div className="container">
+  //     <AppHeader />
+  //     <div className="search">
+  //       <SearchPanel />
+  //       <SearchFilter />
+  //     </div>
+  //     <TodoList
+  //       affairs={affairs}
+  //       deleteItem={deleteItem} />
+  //   </div>
+  // );
+// };
+
+// export default App;

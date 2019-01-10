@@ -29,7 +29,7 @@ class TodoListItem extends React.Component {
   };
 
   render() {
-    const { label } = this.props
+    const { label, ...otherProps } = this.props
     let className = `todo-item__text-container`;
 
     if (this.state.important) className += ' --important';
@@ -40,7 +40,8 @@ class TodoListItem extends React.Component {
         <span className="todo-item__text"
           onClick={this.doDoneLabel}>{label}</span>
 
-        <TodoListBtns doImportant={this.doImportant} />
+        <TodoListBtns doImportant={this.doImportant}
+          {...otherProps} />
       </span>
     );
   }
